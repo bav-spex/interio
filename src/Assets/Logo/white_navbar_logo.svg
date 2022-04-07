@@ -1,0 +1,17 @@
+<svg id="white_navbar_logo" xmlns="http://www.w3.org/2000/svg" width="153.631" height="34.582" viewBox="0 0 153.631 34.582">
+  <g id="Group_1" data-name="Group 1">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="2.881" height="34.582" fill="#fff"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="2.881" height="34.582" transform="translate(34.582)" fill="#fff"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="31.7" height="2.881" transform="translate(2.881 15.851)" fill="#fff"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="8.646" height="2.881" transform="translate(14.408 7.926)" fill="#fff"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="8.646" height="2.881" transform="translate(14.408 23.775)" fill="#fff"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="31.7" height="2.881" transform="translate(2.881)" fill="#fff"/>
+  </g>
+  <path id="Path_7" data-name="Path 7" d="M367,423.31h2.877v15.94H367Z" transform="translate(-318.873 -413.989)" fill="#fff"/>
+  <path id="Path_8" data-name="Path 8" d="M407.28,423.31h2.9l8.422,11.215V423.31h2.877v15.94H418.6l-8.422-11.206V439.25h-2.9Z" transform="translate(-350.414 -413.989)" fill="#fff"/>
+  <path id="Path_9" data-name="Path 9" d="M500.945,425.955H495.84V423.31h13.087v2.645h-5.105v13.3h-2.877Z" transform="translate(-419.76 -413.989)" fill="#fff"/>
+  <path id="Path_10" data-name="Path 10" d="M581.2,425.955v3.853h8.245v2.645H581.2v4.153h9.1v2.645h-12V423.31h12v2.645Z" transform="translate(-484.329 -413.989)" fill="#fff"/>
+  <path id="Path_11" data-name="Path 11" d="M666.865,439.25l-3.758-5.359h-3.079v5.359h-2.9V423.31h6.943c3.413,0,5.964,2.18,5.964,5.29a5.178,5.178,0,0,1-3.851,4.99l3.99,5.661Zm-6.845-8.028h3.714c1.972,0,3.341-1,3.341-2.623s-1.369-2.621-3.341-2.621h-3.706Z" transform="translate(-546.056 -413.989)" fill="#fff"/>
+  <path id="Path_12" data-name="Path 12" d="M739.59,423.31h2.877v15.94H739.59Z" transform="translate(-610.626 -413.989)" fill="#fff"/>
+  <path id="Path_13" data-name="Path 13" d="M776.17,430.245a8.366,8.366,0,1,1,8.375,8.262A8.41,8.41,0,0,1,776.17,430.245Zm13.76,0a5.408,5.408,0,1,0-5.385,5.615A5.556,5.556,0,0,0,789.93,430.245Z" transform="translate(-639.269 -412.964)" fill="#fff"/>
+</svg>

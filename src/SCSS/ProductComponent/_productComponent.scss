@@ -1,0 +1,531 @@
+//////// product type One ////////////
+
+.product__block {
+  background-color: #eee;
+  padding: 40px;
+  height: 385px;
+  transition: all 0.2s ease-in-out;
+
+  .product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.2s ease-in-out;
+    .product__title__block {
+      margin-bottom: 20px;
+
+      .product__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        color: #303030;
+      }
+      .product__tagline {
+        margin: 0;
+        font-size: 14px;
+        color: #303030;
+      }
+    }
+    .product__favourite__icon {
+      margin-top: 8px;
+      display: block;
+    }
+    .product__favourite__icon__disable {
+      display: none;
+    }
+  }
+  .product__price {
+    margin: 0px 0px 70px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  .product__image__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    .product__image {
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+      //   height: 130px;
+    }
+  }
+}
+
+//////// product type One : Hover ////////////
+.product__block:hover {
+  background-color: #303030;
+  transition: all 0.2s ease-in-out;
+
+  .product__header {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    .product__title__block {
+      .product__title {
+        font-weight: 300;
+        color: #fff;
+      }
+      .product__tagline {
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+    .product__favourite__icon {
+      filter: invert(1);
+    }
+  }
+  .product__price {
+    color: #fff;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+  }
+  .product__image__block {
+    transform: translateY(-15px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+//////// Product Type Two  ////////////
+
+.type2__product__block {
+  background-color: #303030;
+
+  padding: 40px 0px;
+  height: 385px;
+  transition: all 0.2s ease-in-out;
+
+  .type2__product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.2s ease-in-out;
+
+    padding: 0px 40px;
+    .type2__product__title__block {
+      margin-bottom: 20px;
+      .type2__product__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        color: #fff;
+      }
+      .type2__product__tagline {
+        margin: 0;
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+    .type2__product__favourite__icon {
+      margin-top: 8px;
+      display: block;
+      filter: invert(1);
+    }
+    .type2__product__favourite__icon__disable {
+      display: none;
+    }
+  }
+  .type2__product__price {
+    margin: 0px 40px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  .type2__product__image__block {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    .type2__product__image {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+//////// Product Type Two : Hover ////////////
+.type2__product__block:hover {
+  background-color: #eeeeee;
+  transition: all 0.2s ease-in-out;
+
+  .type2__product__header {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    .type2__product__title__block {
+      .type2__product__title {
+        font-size: 24px;
+        font-weight: 400;
+        color: #303030;
+      }
+      .type2__product__tagline {
+        font-size: 14px;
+        color: #303030;
+      }
+    }
+    .type2__product__favourite__icon {
+      filter: invert(0);
+    }
+  }
+  .type2__product__price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+  }
+  .type2__product__image__block {
+    transform: translateY(-20px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+//////// Home Product 8 Box  ////////////
+.homePageProduct__container {
+  width: 100%;
+  .homePageProduct__block {
+    margin: 0;
+    padding: 50px 255px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .section__title {
+      font-size: 36px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0px auto 50px;
+      padding: 0px;
+    }
+    .homePageProducts {
+      padding: 0px;
+      table {
+        width: 100%;
+      }
+
+      .first__product__box__row {
+        width: 100%;
+        margin: 0px;
+      }
+
+      .second__product__box__row {
+        width: 100%;
+        margin: 0px;
+      }
+
+      .text__box {
+        // width: 366px;
+        font-size: 30px;
+        font-weight: 300;
+        padding: 0px;
+        height: 366px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        transition: border 0.01s ease-in-out;
+      }
+      .text__box:hover {
+        // width: 366px;
+        background-color: #303030;
+        color: white;
+        z-index: 2;
+        box-shadow: 0px 0px 50px 0px #1f1f1fc7;
+        transition: all 0.2s ease-in-out;
+      }
+      .image__box {
+        padding: 0px;
+
+        height: 366px;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.1s ease;
+        transition: border 0.01s ease;
+        .image__box__image {
+          transform: translateX(-25%);
+          height: 100%;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+      .image__box:hover {
+        border: 4px solid #fff;
+        z-index: 2;
+        box-shadow: 0px 0px 50px 0px #bebebe;
+        transition: all 0.1s ease;
+      }
+    }
+  }
+}
+
+//////// Home Page Lamp Component  ////////////
+
+.homePageLamp__container {
+  width: 100%;
+  .homePageLamp__block {
+    margin: 0;
+    padding: 50px 255px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .section__title {
+      font-size: 36px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0px auto 50px;
+      padding: 0px;
+    }
+  }
+}
+
+//////// Product Type Three  ////////////
+
+.type3__product__block {
+  background-color: #303030;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+
+  .type3__product__image {
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .type3__product__header {
+    padding: 40px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.2s ease-in-out;
+    .type3__product__title__block {
+      margin-bottom: 20px;
+
+      .type3__product__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        color: #eee;
+      }
+      .type3__product__tagline {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #969696;
+      }
+    }
+  }
+  .type3__product__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.2s ease-in-out;
+    padding: 0px 40px 40px;
+    .type3__product__price {
+      margin: 0px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .type3__product__icon__block {
+    display: flex;
+    justify-content: space-between;
+    .type3__product__cart__icon {
+      display: block;
+      margin-left: 5px;
+    }
+    .type3__product__cart__icon__disable {
+      display: none;
+    }
+    .type3__product__favourite__icon {
+      margin-left: 5px;
+      display: block;
+    }
+    .type3__product__favourite__icon__disable {
+      display: none;
+    }
+  }
+}
+
+//////// Product Type Three : Hover  ////////////
+
+.type3__product__block:hover {
+  .type3__product__image {
+    transform: scale(110%) translateY(-20px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+//////// Home Page Latest Product  ////////////
+
+.homePageLatestProduct__container {
+  width: 100%;
+  .homePageLatestProduct__block {
+    margin: 0;
+    padding: 50px 255px 50px;
+    .latestProduct__first__row {
+      margin-bottom: 24px;
+      .latestProduct__title__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        .latestProduct__small__title {
+          font-size: 20px;
+          margin: 0;
+        }
+        .latestProduct__big__title {
+          margin: 0;
+          font-size: 36px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .latestProduct__title__line {
+          height: 4px;
+          width: 40%;
+          background-color: #848484;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+      .latestProduct__title__block:hover {
+        .latestProduct__title__line {
+          height: 4px;
+          width: 80%;
+          background-color: #848484;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+    .latestProduct__big__block {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+.type4__product__block {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+
+  .type4__product__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.type4__product__block:hover {
+  .type4__product__image {
+    transform: scale(110%);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+////////// AdsBanner //////////////
+
+.adsBannerOne__container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .adsBannerOne__explore__button {
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    position: absolute;
+    padding: 0px 20px;
+    top: 45%;
+    left: 75%;
+    transition: all 0.2s ease-in-out;
+    width: 176px;
+
+    .button__text {
+      height: 70px;
+      margin: 0;
+      color: #fff;
+      font-family: "Bebas Neue", cursive;
+      font-size: 50px;
+      transition: all 0.2s ease-in-out;
+    }
+    .button__icon {
+      opacity: 0;
+      transform: translateX(-50px);
+      margin-left: 20px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+.adsBannerOne__explore__button:hover {
+  background-color: #fff;
+  width: 228px;
+
+  transition: all 0.2s ease-in-out;
+
+  .button__text {
+    color: #303030;
+    transition: all 0.2s ease-in-out;
+  }
+  .button__icon {
+    opacity: 1;
+    transform: translateX(0px);
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+////////// AdsBanner Two //////////////
+
+.adsBannerTwo__container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .adsBannerTwo__explore__button {
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    position: absolute;
+    padding: 0px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    transition: all 0.2s ease-in-out;
+    width: 176px;
+
+    .button__text {
+      height: 70px;
+      margin: 0;
+      color: #fff;
+      font-family: "Bebas Neue", cursive;
+      font-size: 50px;
+      transition: all 0.2s ease-in-out;
+    }
+    .button__icon {
+      opacity: 0;
+      transform: translateX(-50px);
+      margin-left: 20px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+.adsBannerTwo__explore__button:hover {
+  background-color: #fff;
+  width: 228px;
+  transition: all 0.2s ease-in-out;
+
+  .button__text {
+    color: #303030;
+    transition: all 0.2s ease-in-out;
+  }
+  .button__icon {
+    opacity: 1;
+    transform: translateX(0px);
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+}
