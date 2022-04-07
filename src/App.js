@@ -7,7 +7,7 @@ import Products from "./Pages/Products";
 import Category from "./Pages/Category";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-
+import "./App.css"
 function App() {
   return (
     <>

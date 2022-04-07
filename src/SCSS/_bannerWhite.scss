@@ -1,0 +1,85 @@
+.white__banner__container {
+    display: flex;
+    justify-content: center;
+    //   align-items: center;
+    position: relative;
+    //   overflow-y: hidden !important;
+    .white__banner__block {
+      margin: 0px auto;
+      height: 937px;
+      width: 1920px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+  
+      .white__banner {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+        transform: scale(50%);
+  
+        .white__banner__image {
+          width: 100%;
+          height: auto;
+        }
+        .white__banner__title {
+          width: 700px;
+          text-align: left;
+          line-height: 120px;
+          font-family: "Bebas Neue", cursive;
+          font-size: 120px;
+          color: rgba(255, 255, 255, 0);
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: #000;
+          position: absolute;
+          top: 270px;
+          left: 250px;
+          margin: 0px;
+        }
+      }
+  
+      .white__activeBanner {
+        opacity: 1;
+        transform: translateX(0%) scale(100%);
+      }
+      .white__prevBanner {
+        opacity: 0;
+        transform: translateX(-100%) scale(50%);
+      }
+      .white__nextBanner {
+        opacity: 0;
+        transform: translateX(100%) scale(50%);
+      }
+    }
+    .white__dots__block {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      margin: 0 auto;
+      bottom: 300px;
+      left: 250px;
+  
+      .white__dot {
+        width: 5px;
+        height: 5px;
+        margin: 0px 8px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .white__dotActive {
+        background-color: rgba(0, 0, 0, 1);
+      }
+    }
+    .white__banner__pin__block {
+      position: absolute;
+      margin: 0 auto;
+      bottom: 30px;
+      // left: 250px;
+    }
+  }
+  
