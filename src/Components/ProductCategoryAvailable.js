@@ -68,6 +68,63 @@ const ProductCategoryAvailableDataJSON = [
   },
 ];
 
+const ProductCategoryAvailableData = [
+  {
+    id: 1,
+    categoryName: "Modular Sofas",
+    image: productAvailbale_01,
+    available: 12,
+  },
+  {
+    id: 2,
+    categoryName: "4 Seater Sofas",
+    image: productAvailbale_02,
+    available: 34,
+  },
+  {
+    id: 3,
+    categoryName: "3 Seater Sofas",
+    image: productAvailbale_03,
+    available: 65,
+  },
+  {
+    id: 4,
+    categoryName: "Click Clack Sofas",
+    image: productAvailbale_04,
+    available: 36,
+  },
+  {
+    id: 5,
+    categoryName: "Chaise Lounge",
+    image: productAvailbale_05,
+    available: 7,
+  },
+  {
+    id: 6,
+    categoryName: "2 Seater Sofas",
+    image: productAvailbale_06,
+    available: 98,
+  },
+  {
+    id: 7,
+    categoryName: "Leather Sofas",
+    image: productAvailbale_07,
+    available: 23,
+  },
+  {
+    id: 8,
+    categoryName: "Chesterfield Sofas",
+    image: productAvailbale_08,
+    available: 6,
+  },
+  {
+    id: 9,
+    categoryName: "Sofa Beds",
+    image: productAvailbale_09,
+    available: 10,
+  },
+];
+
 function ProductCategoryAvailable() {
   return (
     <div className="productAvailable__container">
