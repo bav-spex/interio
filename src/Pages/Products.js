@@ -57,11 +57,15 @@ function Products() {
         <NavbarBlack/>
         <BannerBlack  />
       <ProductCategoryAvailable/>
-        <AdsBannerOne />
+      <ProductCategoryAvailable/>
+      <ProductCategoryAvailable/>
+      <ProductCategoryAvailable/>
+      <ProductCategoryAvailable/>
+        {/* <AdsBannerOne /> */}
        
        
-        <NewsLetter  />
-        <Footer/>
+        {/* <NewsLetter  /> */}
+        {/* <Footer/> */}
       </div>
     </>
   );

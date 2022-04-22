@@ -20,9 +20,7 @@ function ProductTypeOne({ product }) {
   };
   return (
     <div className="type3__product__block">
-    
-        <img className="type3__product__image" src={product.images} alt="" />
-      
+      <img className="type3__product__image" src={product.images} alt="" />
 
       <div className="type3__product__header">
         <div className="type3__product__title__block">
@@ -34,54 +32,54 @@ function ProductTypeOne({ product }) {
       </div>
       <div className="type3__product__footer">
         <p className="type3__product__price">{`$ ${product.price}`}</p>
-<div className="type3__product__icon__block">
-
-
-        <img
-          onMouseEnter={() => setIsInCartHover(true)}
-          onClick={handleInCart}
-          onMouseLeave={() => setIsInCartHover(false)}
-          className={
-            !isInCart
-              ? "type3__product__cart__icon"
-              : "type3__product__cart__icon__disable"
-          }
-          src={isInCartHover ? white_fulfill_cart : white_empty_cart}
-          alt=""
-        />
-        <img
-          onClick={handleInCart}
-          className={
-            isInCart
-              ? "type3__product__cart__icon"
-              : "type3__product__cart__icon__disable"
-          }
-          src={white_fulfill_cart}
-          alt=""
-        />
-        <img
-          onMouseEnter={() => setIsFavouriteHover(true)}
-          onClick={handleFavourite}
-          onMouseLeave={() => setIsFavouriteHover(false)}
-          className={
-            !isFavourite
-              ? "type3__product__favourite__icon"
-              : "type3__product__favourite__icon__disable"
-          }
-          src={isFavouriteHover ? white_fulfill_favourite : white_empty_favourite}
-          alt=""
-        />
-        <img
-          onClick={handleFavourite}
-          className={
-            isFavourite
-              ? "type3__product__favourite__icon"
-              : "type3__product__favourite__icon__disable"
-          }
-          src={white_fulfill_favourite}
-          alt=""
-        />
-      </div>
+        <div className="type3__product__icon__block">
+          <img
+            onMouseEnter={() => setIsInCartHover(true)}
+            onClick={handleInCart}
+            onMouseLeave={() => setIsInCartHover(false)}
+            className={
+              !isInCart
+                ? "type3__product__cart__icon"
+                : "type3__product__cart__icon__disable"
+            }
+            src={isInCartHover ? white_fulfill_cart : white_empty_cart}
+            alt=""
+          />
+          <img
+            onClick={handleInCart}
+            className={
+              isInCart
+                ? "type3__product__cart__icon"
+                : "type3__product__cart__icon__disable"
+            }
+            src={white_fulfill_cart}
+            alt=""
+          />
+          <img
+            onMouseEnter={() => setIsFavouriteHover(true)}
+            onClick={handleFavourite}
+            onMouseLeave={() => setIsFavouriteHover(false)}
+            className={
+              !isFavourite
+                ? "type3__product__favourite__icon"
+                : "type3__product__favourite__icon__disable"
+            }
+            src={
+              isFavouriteHover ? white_fulfill_favourite : white_empty_favourite
+            }
+            alt=""
+          />
+          <img
+            onClick={handleFavourite}
+            className={
+              isFavourite
+                ? "type3__product__favourite__icon"
+                : "type3__product__favourite__icon__disable"
+            }
+            src={white_fulfill_favourite}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

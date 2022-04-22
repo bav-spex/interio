@@ -67,7 +67,7 @@ function BannerWhite() {
             return (
               <div className={position} key={ban.id}>
                 <img className="white__banner__image" src={ban.image} alt="" />
-                <p className="white__banner__title">{ban.title}</p>
+                {/* <p className="white__banner__title">{ban.title}</p> */}
               </div>
             );
           })}

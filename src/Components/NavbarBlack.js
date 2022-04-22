@@ -5,6 +5,7 @@ import white_navbar_logo from "./../Assets/Logo/white_navbar_logo.svg";
 import white_search from "./../Assets/Icon/white_search.svg";
 import white_account from "./../Assets/Icon/white_account.svg";
 import white_cart from "./../Assets/Icon/white_cart.svg";
+import white_menu from "./../Assets/Icon/white_menu.svg";
 
 import { Link } from "react-router-dom";
 
@@ -322,16 +323,19 @@ function NavbarBlack() {
   useEffect(() => {
     // if (height > navbarRef.current.offsetHeight) {
     if (height > 937) {
-      document.querySelector(".black__navbar__container").style.position = "fixed";
-      document.querySelector(".black__navbar").style.backgroundColor = "white";
-      document.querySelector(".black__navbar").style.boxShadow =
+      document.querySelector(".black__navbar__container").style.position =
+        "fixed";
+      document.querySelector(".black__navbar__block").style.backgroundColor =
+        "#303030";
+      document.querySelector(".black__navbar__block").style.boxShadow =
         "rgb(48 48 48 / 11%) 0px 11px 11px 0px";
       document.querySelector(".black__product__popup").style.boxShadow =
         "rgb(48 48 48 / 11%) 0px 0px 11px 0px";
     } else if (height < 937) {
-      document.querySelector(".black__navbar__container").style.position = "absolute";
-      document.querySelector(".black__navbar").style.background = "none";
-      document.querySelector(".black__navbar").style.boxShadow = "";
+      document.querySelector(".black__navbar__container").style.position =
+        "absolute";
+      document.querySelector(".black__navbar__block").style.background = "none";
+      document.querySelector(".black__navbar__block").style.boxShadow = "";
       document.querySelector(".black__product__popup").style.boxShadow = "";
       //   console.log(document.querySelector(".navbar").style);
     }
@@ -344,37 +348,50 @@ function NavbarBlack() {
   return (
     <>
       <div className="black__navbar__container">
-        <div className="black__navbar">
-          <Link className="black__navbar__link" to="/">
-            <img className="black__navbar__logo" src={white_navbar_logo} alt="" />
-          </Link>
+        <div className="black__navbar__block">
+          <div className="black__navbar">
+            <Link className="black__navbar__logo__link" to="/">
+              <img
+                className="black__navbar__logo"
+                src={white_navbar_logo}
+                alt=""
+              />
+            </Link>
 
-          <div className="black__navbar__link__block">
-            <Link className="black__navbar__link" to="/">
-              Home
-            </Link>
-            <div
-              onClick={() => setShowPopup(true)}
-              onMouseEnter={() => setShowPopup(true)}
-              className="black__navbar__link"
-              to="/products"
-            >
-              Products
+            <div className="black__navbar__link__block">
+              <Link className="black__navbar__link" to="/">
+                Home
+              </Link>
+              <div
+                onClick={() => setShowPopup(true)}
+                onMouseEnter={() => setShowPopup(true)}
+                className="black__navbar__link"
+                to="/products"
+              >
+                Products
+              </div>
+
+              <Link className="black__navbar__link" to="/about">
+                About
+              </Link>
+              <Link className="black__navbar__link" to="/contact">
+                Contact Us
+              </Link>
             </div>
-            <Link className="black__navbar__link" to="/category">
-              Category
-            </Link>
-            <Link className="black__navbar__link" to="/about">
-              About
-            </Link>
-            <Link className="black__navbar__link" to="/contact">
-              Contact Us
-            </Link>
-          </div>
-          <div className="black__navbar__icon__block">
-            <img className="black__navbar__icon" src={white_search} alt="" />
-            <img className="black__navbar__icon" src={white_account} alt="" />
-            <img className="black__navbar__icon" src={white_cart} alt="" />
+            <div className="black__navbar__icon__block">
+              <img className="black__navbar__icon" src={white_search} alt="" />
+              <img className="black__navbar__icon" src={white_account} alt="" />
+              <img className="black__navbar__icon" src={white_cart} alt="" />
+            </div>
+            <div className="responsive__black__navbar__icon__block">
+              <img className="black__navbar__icon" src={white_search} alt="" />
+              <img
+                onClick={() => setShowPopup(true)}
+                className="black__navbar__menu__icon"
+                src={white_menu}
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <div
@@ -388,12 +405,12 @@ function NavbarBlack() {
             onMouseLeave={() => setShowPopup(false)}
             className="black__product__popup"
           >
-            <div className="black__product__icon__block">
+            <div className="row black__product__icon__block">
               {categoryData.map((product, productIndex) => {
                 return (
                   <div
                     key={product.id}
-                    className="black__product__image"
+                    className="col-4 col-sm-2 black__product__image"
                     onMouseEnter={() => setMenuIndex(product.id)}
                   >
                     <img
@@ -410,15 +427,15 @@ function NavbarBlack() {
             </div>
             <div className="black__title__block">
               <div className="black__popup__line"></div>
-              <div className="black__product__title__block">
+              <div className="row black__product__title__block">
                 {categoryData.map((product, productIndex) => {
                   return (
                     <p
                       key={product.id}
                       className={
                         product.id === menuIndex
-                          ? "black__product__title"
-                          : "black__product__title__disable"
+                          ? "col-4 col-sm-2 black__product__title"
+                          : "col-4 col-sm-2 black__product__title__disable"
                       }
                     >
                       {product.title}
@@ -434,28 +451,38 @@ function NavbarBlack() {
                     key={product.id}
                     className={
                       product.id === menuIndex
-                        ? "black__category__popup__block"
-                        : "black__category__popup__block__disable"
+                        ? "row black__category__popup__block"
+                        : "row black__category__popup__block__disable"
                     }
                   >
-                    {product.category.map((category, categoryIndex) => {
-                      return (
-                        <div key={category.id} className="black__category__block">
-                          <p className="black__category__title">
-                            {category.categoryName}
-                          </p>
-                          {category.type.map((categoryName) => {
-                            return (
-                              <Link className="black__product__page__link" to="/products">
-                                <p className="black__category">{categoryName}</p>
-                              </Link>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
+                    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-10 row  black__category__main__block">
+                      {product.category.map((category, categoryIndex) => {
+                        return (
+                          <div
+                            key={category.id}
+                            className="col-6col-sm-6 col-md-6 col-lg-3 black__category__block"
+                          >
+                            <p className="black__category__title">
+                              {category.categoryName}
+                            </p>
+                            {category.type.map((categoryName) => {
+                              return (
+                                <Link
+                                  className="black__product__page__link"
+                                  to="/products"
+                                >
+                                  <p className="black__category">
+                                    {categoryName}
+                                  </p>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        );
+                      })}
+                    </div>
                     <img
-                      className="black__navabar__image"
+                      className="col-sm-12 col-md-2 black__navabar__image"
                       src={product.mainCategoryImage}
                       alt=""
                     />

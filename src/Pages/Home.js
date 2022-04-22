@@ -55,16 +55,15 @@ function Home() {
       <div className="page">
         <NavbarWhite/>
         <BannerWhite  />
+        {/* <BannerWhite  /> */}
         <FeatureProducts  />
         <AdsBannerOne />
         <HomePageProducts />
-        <HomePageLamp/>
-        <HomePageLatestProduct
-          
-        />
-        <AdsBannerTwo />
+        {/* <HomePageLamp/> */}
+        {/* <HomePageLatestProduct    /> */}
+        {/* <AdsBannerTwo /> */}
 
-        <div className="quality__container">
+        {/* <div className="quality__container">
           <div className="row quality__block">
             <div className="col-5 quality__text__box">
               <p className="qaulity__title">{qualityData[0].title}</p>
@@ -95,9 +94,9 @@ function Home() {
               </p>
             </div>
           </div>
-        </div>
-        <NewsLetter  />
-        <Footer/>
+        </div> */}
+        {/* <NewsLetter  /> */}
+        {/* <Footer/> */}
       </div>
     </>
   );
